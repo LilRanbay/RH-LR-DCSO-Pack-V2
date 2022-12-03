@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "rh&lr/fldcso/fpis13/fpis13_hwy"
+	"$bumpmap" "sentry/shared/skin_nm"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.5 0.5 0.5]"
+    "$envmapfresnel" "1"
+    "$phong" "1"
+    "$phongexponent" "12"
+    "$phongboost" "0.25"
+    "$phongfresnelranges" "[.05 .3 1]"
+    "$deftint" "[0.75 0.75 0.75]"
+}
+
