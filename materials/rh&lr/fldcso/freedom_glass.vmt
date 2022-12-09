@@ -1,0 +1,6 @@
+"DecalModulate"
+{
+	"$basetexture" "rh&lr/fldcso/freedom_glass"
+	"$model" "1"
+	"$nocull" "1"
+}

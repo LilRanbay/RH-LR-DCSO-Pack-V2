@@ -224,7 +224,7 @@ EMV.Props = {
 	{
 		Model = "models/sentry/antenna6.mdl",
 		Scale = 0.4,  
-		Pos = Vector(11.65, -95, 86.8), 
+		Pos = Vector(11.65, -75, 87.4), 
 		Ang = Angle( 1, 0, 0.6),  
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
@@ -233,7 +233,7 @@ EMV.Props = {
 	{
 		Model = "models/sentry/antenna6.mdl",
 		Scale = 0.4,  
-		Pos = Vector(-11.65, -95, 86.8), 
+		Pos = Vector(-11.65, -75, 87.4), 
 		Ang = Angle( -1, 0, 0.6),  
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
@@ -243,19 +243,19 @@ EMV.Props = {
 	{
 		Model = "models/props_phx/construct/metal_plate_curve360.mdl",
 		Scale = Vector(0.0182, 0.0182, 0.0095),  
-		Pos = Vector(11.65+0.01, -95, 87.2), 
+		Pos = Vector(11.65+0.01, -75, 87.4+0.4), 
 		Ang = Angle( 1, 0, 0.6),  
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
 		SubMaterials = {
 			[0] = "sentry/shared/black",
 			[1] = "sentry/shared/black",
-		}
+		}                                         
 	},
 	{
 		Model = "models/props_phx/construct/metal_plate_curve360.mdl",
 		Scale = Vector(0.0182, 0.0182, 0.0095),  
-		Pos = Vector(-11.65-0.01, -95, 87.2), 
+		Pos = Vector(-11.65-0.01, -75, 87.4+0.4), 
 		Ang = Angle( -1, 0, 0.6),  
 		RenderGroup = RENDERGROUP_OPAQUE,
 		RenderMode = RENDERMODE_NONE,
@@ -263,76 +263,28 @@ EMV.Props = {
 			[0] = "sentry/shared/black",
 			[1] = "sentry/shared/black",
 		}
-	},
-	
-	-- SETUP #1 --
-	
-	
-	-- SETUP #2 --
-	-- EDGE MODULE BLOCKOFFS --
-	{                                          
-		Model = "models/props_phx/construct/plastic/plastic_panel1x1.mdl",
-		Scale = Vector(0.1365, 0.08175, 0.02),
-		Pos = Vector( 18, -16.813, 91.64),         
-		Ang = Angle( 0, 0, 90),
-		RenderGroup = RENDERGROUP_OPAQUE,
-		RenderMode = RENDERMODE_NONE,
-		SubMaterials = {     
-			[0] = "sentry/shared/black",  
-			[1] = "sentry/shared/black"
-		}                                                 
-	}, 
-	{                                          
-		Model = "models/props_phx/construct/plastic/plastic_panel1x1.mdl",
-		Scale = Vector(0.1365, 0.08175, 0.02), 
-		Pos = Vector(-18, -16.813, 91.64),  
-		Ang = Angle( 0, 0, 90),
-		RenderGroup = RENDERGROUP_OPAQUE,
-		RenderMode = RENDERMODE_NONE,
-		SubMaterials = {
-			[0] = "sentry/shared/black",
-			[1] = "sentry/shared/black"
-		}
-	},
-	-- SIREN SPEAKER --
-	{
-		Model = "models/gandhi/props/ts100.mdl",
-		Scale = 1, 
-		Pos = Vector(10, 105, 36.9),
-		Ang = Angle( 0, 90-8, 0),       
-		RenderGroup = RENDERGROUP_OPAQUE, 
-		RenderMode = RENDERMODE_NONE,   
-	},
-	{                                          
-		Model = "models/props_phx/construct/plastic/plastic_panel1x1.mdl", 
-		Scale = Vector(0.15, 0.14, 1), 
-		Pos = Vector(0, 116.5, 37.5),  
-		Ang = Angle( 0, 0, 90),
-		RenderGroup = RENDERGROUP_OPAQUE,
-		RenderMode = RENDERMODE_NONE,
-		SubMaterials = {
-			[0] = "sentry/19tahoe/zeroblack",
-			[1] = "sentry/19tahoe/zeroblack"
-		}
-	},
-	
-} 
+	},          
+}
        
-EMV.Auto = {
-	-- SETUP #1 --
-	-- LIGHTBAR --
+EMV.Auto = {  
+	-- LIGHTBARS --
 	{ 
-		ID = "FLDCSO Whelen Cenator", 
-		Scale = 1.14,  
-		Pos = Vector( 0, -11, 89.4 ), 
+		ID = "FLDCSO Whelen Freedom", 
+		Scale = 1.14,    
+		Pos = Vector( 0, -11, 90 ), 
+		Ang = Angle( 0, 0, 0 )
+	},
+	{ 
+		ID = "FLDCSO Whelen Freedom Mini", 
+		Scale = 1.14,    
+		Pos = Vector( -4.365, -93.5, 86 ), 
 		Ang = Angle( 0, 90, 0 )
 	},
-	
 	-- FRONT AVENGERS --
 	{ 
 		ID = "FLDCSO Whelen Avenger Single",    
 		Scale = .22,
-		Pos = Vector(5, 26, 79.8),   
+		Pos = Vector(5, 26, 79.8),    
 		Ang = Angle( 0, 90, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,  
 		RenderMode = RENDERMODE_NONE,
@@ -454,7 +406,7 @@ EMV.Auto = {
 	{ 
 		ID = "FLDCSO Whelen TAM85",
 		Scale = 1,
-		Pos = Vector(0, -119.5, 63.8),  
+		Pos = Vector(0, -102.5, 88.75),  
 		Ang = Angle( 0, -90, 0),
 		RenderGroup = RENDERGROUP_OPAQUE,  
 		RenderMode = RENDERMODE_NONE,
@@ -468,54 +420,6 @@ EMV.Auto = {
 		Color7 = R,
 		Color8 = R,
 	},
-	
-	-- SETUP #2 --
-	-- LIGHTBAR --
-	{ 
-		ID = "FLDCSO Whelen Edge 9000", 
-		Scale = 1.081,  
-		Pos = Vector( 0, -11, 86.5 ), 
-		Ang = Angle( 0, -90, 0 )
-	},
-	{ 
-		ID = "FLDCSO Whelen Avenger Dual",
-		Scale = .22, 
-		Pos = Vector(-20, -118.9, 63.2),  
-		Ang = Angle( 0, -90-8, 180),
-		RenderGroup = RENDERGROUP_OPAQUE,  
-		RenderMode = RENDERMODE_NONE,
-		Color1 = B,
-		Color2 = R,
-		Phase = "OLDA"
-	},
-	{ 
-		ID = "FLDCSO Whelen Avenger Dual",
-		Scale = .22,
-		Pos = Vector(20, -118.9, 63.2),  
-		Ang = Angle( 0, -90+8, 180),
-		RenderGroup = RENDERGROUP_OPAQUE,  
-		RenderMode = RENDERMODE_NONE,
-		Color1 = R,
-		Color2 = B,
-		Phase = "OLDB"
-	},
-	{
-		ID = "FLDCSO Whelen Ion",
-		Scale = 1,
-		Pos = Vector( -18, 116.6, 43.96 ),
-		Ang = Angle( 1, 10, 0 ),
-		Color1 = "WHITE", 
-		Phase = "A"
-	},
-	{
-		ID = "FLDCSO Whelen Ion",
-		Scale = 1,
-		Pos = Vector( 18, 116.6, 43.96 ),
-		Ang = Angle( -1, -10, 0 ),
-		Color1 = "WHITE", 
-		Phase = "B"
-	},
-	
 	-- FLASHERS -- 
 	{
 		ID = "FLDCSO Tahoe19 Flashers",  
@@ -524,23 +428,6 @@ EMV.Auto = {
 		Ang = Angle( 0, 0, 0 ),
 	},
 }   
-
-EMV.Selections = {
-	{
-		Name = "Setup",
-		Options = {
-		    { Name = "Setup #1", Auto = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,20 } },
-			{ Name = "Setup #2", Auto = { 15,16,17,18,19,20 }, Props = {26,27,28,29} },
-		},
-	},
-		-- MAKE SURE THAT THE WIG WAGS/FLASHERS ARE THE LAST FOR THE AUTO COMPONENTS!! --
-	{
-		Name = "Base Equipment",
-		Options = {
-		    { Name = "Installed", Props = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25} },
-		},
-	},
-}
 
 EMV.Sequences = {
 	Sequences = {
